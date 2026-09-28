@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Reportar vulnerabilidade (privado)
+    url: https://github.com/Heimdall-Intelligence/.github/blob/main/SECURITY.md
+    about: Não abra issue pública para falhas de segurança.
