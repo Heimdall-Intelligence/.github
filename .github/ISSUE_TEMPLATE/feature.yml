@@ -1,0 +1,25 @@
+name: Melhoria
+description: Propor uma funcionalidade ou mudança
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problema
+    attributes:
+      label: Problema ou necessidade
+    validations:
+      required: true
+  - type: textarea
+    id: proposta
+    attributes:
+      label: Proposta e critérios de aceite
+    validations:
+      required: true
+  - type: checkboxes
+    id: impactos
+    attributes:
+      label: Impactos (marque os que se aplicam)
+      options:
+        - label: Autenticação ou autorização
+        - label: Dados, ETL ou migração de banco
+        - label: Infraestrutura, deploy, secrets ou custos
+        - label: Integrações externas ou chaves de IA
