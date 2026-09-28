@@ -1,0 +1,38 @@
+name: Bug
+description: Relatar um comportamento incorreto
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Não inclua** credenciais, dados pessoais, documentos institucionais ou conteúdo de processos. Vulnerabilidades devem ser reportadas em privado (veja SECURITY.md).
+  - type: textarea
+    id: descricao
+    attributes:
+      label: O que aconteceu
+      description: Descreva o problema e o comportamento esperado.
+    validations:
+      required: true
+  - type: textarea
+    id: reproducao
+    attributes:
+      label: Como reproduzir
+      description: Passos com dados sintéticos.
+    validations:
+      required: true
+  - type: dropdown
+    id: experiencia
+    attributes:
+      label: Experiência afetada
+      options:
+        - Plataforma
+        - Portal CGE-RJ
+        - Auditor
+        - Não sei
+    validations:
+      required: true
+  - type: input
+    id: ambiente
+    attributes:
+      label: Ambiente
+      description: Local, homologação ou produção; navegador e versão, se relevante.
